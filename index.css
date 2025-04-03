@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgba(237, 243, 248, 1);
+}
+
+header{
+    padding-top: 40px;
+}
+
+.header{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header img{
+    margin-right: 529px;
+}
+
+.group{
+    display: none;
+}
+
+.header ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.header ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header ul li a{
+    text-decoration: none;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: rgba(54, 83, 107, 1);    
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first h1{
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+    color: rgba(54, 83, 107, 1);
+    margin-top: 152px;    
+    margin-right: 218px;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+}
+
+.second img{
+    margin-right: 125px;
+}
+
+.smallsecond h3{
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    color: rgba(54, 83, 107, 1);
+    margin-bottom: 24px;    
+    margin-top: 60px;
+}
+
+.smallsecond p{
+    font-family: Public Sans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgba(108, 130, 148, 1);    
+}
+
+.third{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p{
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: rgba(54, 83, 107, 1);
+    margin-top: 32px;
+    margin-bottom: 103px;    
+}
+
+footer{
+    height: 100px;
+    background-color: rgba(27, 38, 47, 1);
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 38px;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 64px;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: rgba(251, 252, 254, 1);    
+}
+
+.foot{
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 689px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header img{
+        margin-right: 124px;
+    }
+
+    .first{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .first img{
+        width: 159px;
+        height: 300px;
+    }
+
+    .first h1{
+        font-family: DM Serif Display;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+        text-align: center;
+        margin: auto;        
+    }
+
+    .second{
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second img{
+        margin: auto;
+        margin-right: auto;
+    }
+
+    .third{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer{
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        width: 327px;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header ul{
+        display: none;
+        z-index: -1;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .group{
+        display: inline;
+    }
+
+    .first img{
+        width: 128px;
+        height: 240px;
+        margin: auto;
+    }
+
+    .second img{
+        width: 328px;
+        height: 209px;
+    }
+
+    footer{
+        height: 353px;
+        width: 100%;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
